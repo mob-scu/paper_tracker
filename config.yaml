@@ -3,6 +3,9 @@ keywords:
   - "lm safety"
   - "lm attack"
   - "lm jailbreak"
+  - "llm safety"
+  - "llm attack"
+  - "llm jailbreak"
   # - "video understanding"
 
 logic: "AND"                 # 组间逻辑：categories 与 keywords 间 AND/OR
