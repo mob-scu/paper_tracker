@@ -115,8 +115,15 @@ def call_llm_bilingual_summary(
             "Given the paper metadata below, write TWO concise one-paragraph digests:\n"
             "1) English paragraph first.\n"
             "2) Then a Simplified Chinese paragraph.\n"
-            "- Each paragraph must briefly cover: motivation, method, and main experimental results.\n"
-            "- Do not include links, bullet lists, markdown, or headings. Plain sentences only.\n"
+            """
+            - Each paragraph must briefly cover: 
+                - (1):What is the research background of this article?
+                - (2):What are the past methods? What are the problems with them? What difference is the proposed approach from existing methods? How does the proposed method address the mentioned problems? Is the proposed approach well-motivated? 
+                - (3):What is the contribution of the paper?
+                - (4):What is the research methodology proposed in this paper?
+                - (5):On what task and what performance is achieved by the methods in this paper? Can the performance support their goals?
+            - Do not include links, bullet lists, markdown, or headings. Plain sentences only.
+            """
             '- Return STRICT JSON: {\"digest_en\": \"...\", \"digest_zh\": \"...\"}\n\n'
             f"DATA:\n{json.dumps(user_payload, ensure_ascii=False)}"
         }
