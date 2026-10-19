@@ -74,12 +74,45 @@ summary{cursor:pointer;color:var(--acc)}
   <button class="btn" onclick="__expandAll(false)">Collapse All</button>
 </div>
 
-        <span class="badge">2026-10-19 05:16</span>
+        <span class="badge">2026-10-20 06:49</span>
       </div>
     </div>
     <div class="hr"></div>
     <div>Latest digest</div>
     <div class="row"><div class="card">
+<div class="title">Monitor-Validity Failures: LLM Safety Evidence Paths at Evolving Framework Boundaries</div>
+<div class="meta-line">Authors: Junchi Liao</div>
+<div class="meta-line">First: 2026-10-16T12:09:26+00:00 · Latest: 2026-10-16T12:09:26+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.23362v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.23362v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Modern LLM applications rely on runtime monitors that inspect tool calls, traces, streams, detector outputs, and verifier inputs. This creates an interface-reliability problem: a framework path may remain operational while policy-relevant evidence never reaches its decision point. In one representative case, a regex detector returned a positive match, but the framework stranded the result before the block decision. This differs from jailbreaks and detector errors because the evidence is already recognized yet disconnected from enforcement. We study this repair-boundary signature with canary contracts: parent/fixed confirmation units that place a known payload only on the changed evidence surface and record monitor visibility together with the downstream decision for action-boundary cases. Applying the protocol to public framework repairs, we confirm 18 evidence-path failures across 11 LLM or agent safety project groups and four implementation ecosystems. Nine are established-boundary repairs, eight are new-surface policy-coverage gaps, and one is a boundary-only evidence case. Fourteen reach E1 enforcement boundaries: seven native action outcomes, six configured enforcement boundaries, and one synthetic-consumer consequence. The remaining cases affect verifier, safety-prompt, or observability channels. The cases form carrier, adapter, authority, and surface families and show how ordinary application behavior can remain intact while a safety-specific evidence path misses its decision. Exact revisions, deterministic outcomes, negative controls, and a frozen prospective audit document the confirmation rule. Monitor assumptions therefore need regression tests at the schemas, streams, tools, and adapters that frameworks evolve.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Modern LLM applications rely on runtime monitors that inspect tool calls, traces, streams, detector outputs, and verifier inputs.</div>
+</details>
+</div>
+<div class="card">
+<div class="title">Refusal Is Not Robustness: Measuring Harmful Reachability in Autoregressive Language Models</div>
+<div class="meta-line">Authors: Parv Kapoor, Teresa Fortes, Claudia Mamede, Rui Abreu, Jonathan Aldrich, Eunsuk Kang</div>
+<div class="meta-line">First: 2026-10-15T23:45:21+00:00 · Latest: 2026-10-15T23:45:21+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.22754v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.22754v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">LLM safety evaluations via jailbreaking typically index on attack success rate (ASR): whether a generated response violates safeguards. However, ASR only evaluates sampled outputs and provides little information on the underlying generation process. Autoregressive language models define distributions over possible outputs, and a sampled refusal can coexist with substantial probability mass on harmful generation paths. We study this hidden structure through bounded continuation analysis (BCA), which models autoregressive generation as a stochastic process over token prefixes and computes the finite-horizon probability that generation reaches a harmful continuation. BCA constructs a bounded continuation tree, labels terminal continuations with a semantic harm evaluator, and estimates harmful reachability using exact probabilistic model checking. BCA complements ASR by measuring how much harmful behavior remains accessible beneath a sampled safe response. This makes it useful for distinguishing models that look identical under measured ASR values, and allocating red-team effort toward regions of the generation process with greater hidden risk. Across four instruction-tuned LLMs and 100 JailbreakBench behaviors, we show that BCA effectively quantifies hidden harmful behavior and provides a useful signal to guide red teaming.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">LLM safety evaluations via jailbreaking typically index on attack success rate (ASR): whether a generated response violates safeguards.</div>
+</details>
+</div>
+<div class="card">
+<div class="title">The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems</div>
+<div class="meta-line">Authors: Georgios Politis, Evangelos Pappas</div>
+<div class="meta-line">First: 2026-10-15T22:53:45+00:00 · Latest: 2026-10-15T22:53:45+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.22722v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.22722v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Split language models keep input text on a client but send intermediate representations to a server. Attacks can reconstruct text from these messages. Comparing privacy evaluations is difficult when attackers see different messages, know different model weights or use different datasets and recovery measures. We present LLM-Attacker, a framework that records these choices and lets researchers check, compare and extend an evaluation. Compatible attacks reuse recorded messages, and their predictions are saved for independent scoring. The scoring rule requires a linked undefended reference before a defence can pass. Reports also identify attacks that remain untested. In a controlled GPT-2 experiment, adding gradients returned during training increased token recovery from 94.20% to 97.38% and exact-document recovery from 13.71% to 37.77%. The 95% interval for the token gain lay above the two-percentage-point threshold fixed before testing. This experiment is shared with a companion study; here, it tests how the evaluation responds to a change in attacker access. Further studies measure how corpus choice and compression defences affect recovery, compare an adapted published attack with its reference implementation, and test the measurement code. The framework reports implementation checks separately from measured attack effectiveness. Each privacy claim should state the attacker, dataset and scoring rule, report its controls and identify untested attacks.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Split language models keep input text on a client but send intermediate representations to a server.</div>
+</details>
+</div>
+<div class="card">
 <div class="title">In the Guise of Correction: How Framing and Cultural Adaptation Erode LLM Safety on Real-World Criminal Cases</div>
 <div class="meta-line">Authors: Mohsinul Kabir, Md. Tariquzzaman, Karam S. R. Elradie, Polydoros Giannouris, Yuechen Jiang, Shaoxiong Ji, Sophia Ananiadou</div>
 <div class="meta-line">First: 2026-10-15T12:44:04+00:00 · Latest: 2026-10-15T12:44:04+00:00</div>
@@ -1224,44 +1257,10 @@ summary{cursor:pointer;color:var(--acc)}
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">Almost every paper on LLM jailbreaks and prompt injection reports an attack-success rate (ASR), and that number is assigned not by people but by an automated judge: either a safety classifier trained for the task, or a general chat model prompted to grade.</div>
 </details>
-</div>
-<div class="card">
-<div class="title">RAS: Measuring LLM Safety Through Refusal Alignment</div>
-<div class="meta-line">Authors: Chang-Chieh Huang, Yan-Lun Chen, Chia-Mu Yu, Wei-Bin Lee</div>
-<div class="meta-line">First: 2026-06-24T12:19:40+00:00 · Latest: 2026-06-24T12:19:40+00:00</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2606.25750v1">Abs</a> · <a href="https://arxiv.org/pdf/2606.25750v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Safety evaluation of large language models (LLMs) is commonly performed by querying models with unsafe or jailbreak prompts and judging whether their outputs violate a safety policy. Although useful, output-level evaluation is expensive, sensitive to judge choice, and easily tied to fixed question banks. We propose **SafeVec**, a white-box evaluation procedure that measures safety from internal representations rather than generated answers. **SafeVec** first extracts layer-wise refusal directions from a safety-aligned reference model, then selects stable layer windows where safe and unsafe behaviors are separable, and finally scores a target model by measuring whether its hidden states align with these refusal directions under unsafe and jailbreak prompts. The resulting metric, **RAS** (**R**efusal **A**lignment **S**core), maps representation-level refusal alignment to a calibrated 0-100 safety score. Across `Llama`, `Gemma`, and `Qwen` model families, RAS separates aligned models from uncensored and abliterated variants, tracks output-level attack success rate, and is substantially faster than judge-based evaluation. These results suggest that refusal alignment provides a compact and efficient signal for white-box LLM safety evaluation.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Safety evaluation of large language models (LLMs) is commonly performed by querying models with unsafe or jailbreak prompts and judging whether their outputs violate a safety policy.</div>
-</details>
-</div>
-<div class="card">
-<div class="title">TROPT: An Open Framework for Unifying and Advancing Discrete Text Optimization</div>
-<div class="meta-line">Authors: Matan Ben-Tov, Mahmood Sharif</div>
-<div class="meta-line">First: 2026-06-22T15:44:27+00:00 · Latest: 2026-06-22T15:44:27+00:00</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2606.23496v1">Abs</a> · <a href="https://arxiv.org/pdf/2606.23496v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Discrete text-trigger optimization -- searching for text sequences that, when ingested by a model, steer it toward a specified objective -- underpins model red-teaming (e.g., LLM jailbreaks), as well as auditing and interpretability. However, the current state of discrete optimizers hinders their adoption and progress. First, existing optimizers, when open-sourced at all, are scattered across research codebases tied to specific models, objectives, and problem domains. Second, optimizer variants proliferate, each requiring engineering overhead to use or extend, and remaining hard to compare head-to-head. Together, these raise the bar for adopting optimizers in existing or new domains, and for advancing them via new strategies. We address these gaps with TROPT, the first open-source framework that unifies discrete optimizers&#x27; execution and standardizes their development under a single interface. TROPT makes it easy to customize end-to-end optimization recipes by swapping any component -- models, objectives, and optimizers -- extending its reach across domains and new applications. TROPT currently ships with 30+ optimization recipes -- covering applications such as jailbreaking and probing model internals -- built from 15+ optimizers (spanning white-box to black-box access) and 15+ losses, from foundational to state-of-the-art methods. Demonstrating its utility, we leverage TROPT in several studies: (i) controlled, large-scale experiments comparing and enhancing optimization strategies for LLM jailbreaks, revealing potent-yet-underadopted techniques; and (ii) porting optimizers from one domain (e.g., LLM jailbreak) to new domains (e.g., corpus-poisoning embedding model). In all, TROPT significantly lowers the barrier to adopting and advancing discrete text optimization.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Discrete text-trigger optimization -- searching for text sequences that, when ingested by a model, steer it toward a specified objective -- underpins model red-teaming (e.g., LLM jailbreaks), as well as auditing and interpretability.</div>
-</details>
-</div>
-<div class="card">
-<div class="title">Culturally-Adapted Red-Teaming Across East and Southeast Asian Contexts: A Methodological and Comparative Analysis</div>
-<div class="meta-line">Authors: Hyeji Choi, Yongtaek Lim, Minwoo Kim</div>
-<div class="meta-line">Venue: ICML 2026</div>
-<div class="meta-line">First: 2026-06-08T08:17:18+00:00 · Latest: 2026-06-22T07:46:06+00:00</div>
-<div class="meta-line">Comments: Accepted to ICML 2026 Workshop on Culture X AI</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2606.09178v2">Abs</a> · <a href="https://arxiv.org/pdf/2606.09178v2">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Multilingual safety evaluation of large language models (LLMs) has predominantly relied on direct translation (DT) of English benchmarks into target languages - an approach that converts surface-level linguistic form while failing to reflect the cultural context embedded in threat scenarios, social norms, and legal frameworks. We construct paired DT and culturally-adapted (CA) datasets via 1:1 seed matching for four languages - Korean (KO), Japanese (JA), Thai (TH), and Khmer (KM) - and compare Attack Success Rate (ASR) and Cultural Realism scores across four open-source LLM. CA prompts yield Delta-ASR &gt; 0 across all 16 language x model combinations (mean +9.3 pp), and DT-based evaluation underestimates risk in 44 of 48 category x language combinations. Language-level analysis reveals that the distribution of threat forms is heterogeneous across languages. Cultural Realism analysis further shows that DT Cultural Depth (C3) scores remain consistently below 1.0 out of 3.0 across all four languages (mean 0.17), whereas CA scores reach up to 2.51, indicating that direct translation produces inputs systematically divergent from those encountered in real-world multicultural settings. These findings demonstrate that adapting benchmarks to language-specific cultural contexts - rather than relying on linguistic translation alone - is necessary for valid multilingual LLM safety evaluation.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Multilingual safety evaluation of large language models (LLMs) has predominantly relied on direct translation (DT) of English benchmarks into target languages - an approach that converts surface-level linguistic form while failing to reflect the cultural context embedded in threat scenarios, social norms, and legal frameworks.</div>
-</details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20261018_0514.html">20261018_0514</a>
+      <div class="history-list"><a href="archive/20261019_0516.html">20261019_0516</a>
+<a href="archive/20261018_0514.html">20261018_0514</a>
 <a href="archive/20261017_0624.html">20261017_0624</a>
 <a href="archive/20261016_0626.html">20261016_0626</a>
 <a href="archive/20261015_0630.html">20261015_0630</a>
