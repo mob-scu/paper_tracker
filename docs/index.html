@@ -74,12 +74,46 @@ summary{cursor:pointer;color:var(--acc)}
   <button class="btn" onclick="__expandAll(false)">Collapse All</button>
 </div>
 
-        <span class="badge">2026-10-21 06:08</span>
+        <span class="badge">2026-10-22 06:05</span>
       </div>
     </div>
     <div class="hr"></div>
     <div>Latest digest</div>
     <div class="row"><div class="card">
+<div class="title">Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing</div>
+<div class="meta-line">Authors: Diego Miguel Lozano, Erik Derner, Juan Antonio Pérez-Ortiz, Nuria Oliver</div>
+<div class="meta-line">First: 2026-10-20T09:22:50+00:00 · Latest: 2026-10-20T09:22:50+00:00</div>
+<div class="meta-line">Comments: Code and data: https://github.com/dmlls/llm-safety-polarity-blindness</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.27908v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.27908v1">PDF</a> · <a href="https://github.com/dmlls/llm-safety-polarity-blindness">Code1</a> · <a href="https://huggingface.co/huggingface">Code2</a> · <a href="https://huggingface.co/docs/hub/spaces">Code3</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Negation remains a persistent challenge for language models across NLP tasks and modalities. We show that this weakness can undermine LLM safety guardrails through a structural vulnerability we term polarity blindness: the failure to recognize harmful intent after polarity-altering linguistic transformations. We study two forms of polarity inversion: grammatical negation and antonym replacement, and use synonym replacement as a polarity-preserving control. We further test whether an adversarial textual wrapper amplifies these failures. Using a 260-prompt benchmark across 10 state-of-the-art LLMs and 3 languages (English, Spanish, Czech), stratified by harmfulness potential and evaluated on a validated 0-5 harm scale, we find that polarity blindness affects most evaluated models, with mean harm scores reaching 4.12 for the most vulnerable model. The effect persists across typologically differing negation systems, suggesting that polarity blindness reflects a broader limitation in semantic robustness rather than a language- or grammar-specific failure.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Negation remains a persistent challenge for language models across NLP tasks and modalities.</div>
+</details>
+</div>
+<div class="card">
+<div class="title">When LLMs Manipulate: Measuring Behavioral, Social, and Temporal Effects</div>
+<div class="meta-line">Authors: Sadia Asif, Israel Antonio Rosales Laguan, Shumaila Asif, Haris Khan, Muneeb Asif, Muhammad Zeeshan Karamat</div>
+<div class="meta-line">First: 2026-10-20T03:41:05+00:00 · Latest: 2026-10-20T03:41:05+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.27573v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.27573v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Large language models (LLMs) can influence user trust and decision-making through subtle linguistic cues, yet the behavioral effects of manipulative outputs remain poorly quantified. We introduce a behavioral computing framework for measuring \textit{behavioral vulnerability}, defined as users&#x27; susceptibility to manipulative AI responses. Building on DarkPatterns-LLM benchmark, we generate controlled manipulative stimuli using Manipulation Gradient Descent (MGD), targeting biases associated with authority, urgency, and social proof. We analyze participant responses using the Multi-Stakeholder Impact Assessment Network (MSIAN) to model cross-user influence and the Temporal Harm Propagation Model (THPM) to characterize the persistence of behavioral effects over time. In a study involving 120 participants, manipulative framing produced significant changes in trust calibration and compliance ($p &lt; 0.01$), with effects also propagating across social contexts. These findings highlight the need to extend LLM safety evaluation beyond model outputs to measurable behavioral consequences and provide a computational framework for quantifying individual, social, and temporal risks arising from manipulative AI interactions.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Large language models (LLMs) can influence user trust and decision-making through subtle linguistic cues, yet the behavioral effects of manipulative outputs remain poorly quantified.</div>
+</details>
+</div>
+<div class="card">
+<div class="title">LLM-Attack Suite: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems</div>
+<div class="meta-line">Authors: Georgios Politis, Evangelos Pappas</div>
+<div class="meta-line">First: 2026-10-15T22:53:45+00:00 · Latest: 2026-10-19T23:03:49+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.22722v2">Abs</a> · <a href="https://arxiv.org/pdf/2610.22722v2">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Split language models keep input text on a client but send intermediate representations to a server. Attacks can reconstruct text from these messages. Comparing privacy evaluations is difficult when attackers see different messages, know different model weights or use different datasets and recovery measures. We present LLM-Attack Suite, a framework that records these choices and lets researchers check, compare and extend an evaluation. Compatible attacks reuse recorded messages, and their predictions are saved for independent scoring. The scoring rule requires a linked undefended reference before a defence can pass. Reports also identify attacks that remain untested. In a controlled GPT-2 experiment, adding gradients returned during training increased token recovery from 94.20% to 97.38% and exact-document recovery from 13.71% to 37.77%. The 95% interval for the token gain lay above the two-percentage-point threshold fixed before testing. This experiment is shared with a companion study; here it tests how the evaluation responds to a change in attacker access. Further studies measure how corpus choice and compression defences affect recovery, compare an adapted published attack with its reference implementation, and test the measurement code. The framework reports implementation checks separately from measured attack effectiveness. Each privacy claim should state the attacker, dataset and scoring rule, report its controls and identify untested attacks.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Split language models keep input text on a client but send intermediate representations to a server.</div>
+</details>
+</div>
+<div class="card">
 <div class="title">Monitor-Validity Failures: LLM Safety Evidence Paths at Evolving Framework Boundaries</div>
 <div class="meta-line">Authors: Junchi Liao</div>
 <div class="meta-line">First: 2026-10-16T12:09:26+00:00 · Latest: 2026-10-16T12:09:26+00:00</div>
@@ -99,17 +133,6 @@ summary{cursor:pointer;color:var(--acc)}
 <div class="mono">LLM safety evaluations via jailbreaking typically index on attack success rate (ASR): whether a generated response violates safeguards. However, ASR only evaluates sampled outputs and provides little information on the underlying generation process. Autoregressive language models define distributions over possible outputs, and a sampled refusal can coexist with substantial probability mass on harmful generation paths. We study this hidden structure through bounded continuation analysis (BCA), which models autoregressive generation as a stochastic process over token prefixes and computes the finite-horizon probability that generation reaches a harmful continuation. BCA constructs a bounded continuation tree, labels terminal continuations with a semantic harm evaluator, and estimates harmful reachability using exact probabilistic model checking. BCA complements ASR by measuring how much harmful behavior remains accessible beneath a sampled safe response. This makes it useful for distinguishing models that look identical under measured ASR values, and allocating red-team effort toward regions of the generation process with greater hidden risk. Across four instruction-tuned LLMs and 100 JailbreakBench behaviors, we show that BCA effectively quantifies hidden harmful behavior and provides a useful signal to guide red teaming.</div></details>
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">LLM safety evaluations via jailbreaking typically index on attack success rate (ASR): whether a generated response violates safeguards.</div>
-</details>
-</div>
-<div class="card">
-<div class="title">The LLM-Attacker: A Unified Red-Team Framework for Privacy Evaluation of Split and Distributed LLM Systems</div>
-<div class="meta-line">Authors: Georgios Politis, Evangelos Pappas</div>
-<div class="meta-line">First: 2026-10-15T22:53:45+00:00 · Latest: 2026-10-15T22:53:45+00:00</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.22722v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.22722v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Split language models keep input text on a client but send intermediate representations to a server. Attacks can reconstruct text from these messages. Comparing privacy evaluations is difficult when attackers see different messages, know different model weights or use different datasets and recovery measures. We present LLM-Attacker, a framework that records these choices and lets researchers check, compare and extend an evaluation. Compatible attacks reuse recorded messages, and their predictions are saved for independent scoring. The scoring rule requires a linked undefended reference before a defence can pass. Reports also identify attacks that remain untested. In a controlled GPT-2 experiment, adding gradients returned during training increased token recovery from 94.20% to 97.38% and exact-document recovery from 13.71% to 37.77%. The 95% interval for the token gain lay above the two-percentage-point threshold fixed before testing. This experiment is shared with a companion study; here, it tests how the evaluation responds to a change in attacker access. Further studies measure how corpus choice and compression defences affect recovery, compare an adapted published attack with its reference implementation, and test the measurement code. The framework reports implementation checks separately from measured attack effectiveness. Each privacy claim should state the attacker, dataset and scoring rule, report its controls and identify untested attacks.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Split language models keep input text on a client but send intermediate representations to a server.</div>
 </details>
 </div>
 <div class="card">
@@ -1232,34 +1255,10 @@ summary{cursor:pointer;color:var(--acc)}
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">Jailbreak attacks remain a persistent threat to large language model safety.</div>
 </details>
-</div>
-<div class="card">
-<div class="title">Just Ask: Curious Code Agents Reveal System Prompts in Frontier LLMs</div>
-<div class="meta-line">Authors: Xiang Zheng, Yutao Wu, Hanxun Huang, Yige Li, Xingjun Ma, Bo Li, Yu-Gang Jiang, Cong Wang</div>
-<div class="meta-line">Venue: ICML 2026</div>
-<div class="meta-line">First: 2026-01-29T03:53:25+00:00 · Latest: 2026-06-26T10:38:52+00:00</div>
-<div class="meta-line">Comments: Accepted at ICML 2026</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2601.21233v2">Abs</a> · <a href="https://arxiv.org/pdf/2601.21233v2">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Autonomous code agents built on large language models are reshaping software and AI development through tool use, long-horizon reasoning, and self-directed interaction. However, this autonomy introduces a previously unrecognized security risk: agentic interaction fundamentally expands the LLM attack surface, enabling systematic probing and recovery of hidden system prompts that guide model behavior. We identify system prompt extraction as an emergent vulnerability intrinsic to code agents and present \textbf{\textsc{JustAsk}}, a self-evolving framework that autonomously discovers effective extraction strategies through interaction alone. Unlike prior prompt-engineering or dataset-based attacks, \textsc{JustAsk} requires no handcrafted prompts, labeled supervision, or privileged access beyond standard user interaction. It formulates extraction as an online exploration problem, using Upper Confidence Bound-based strategy selection and a hierarchical skill space spanning atomic probes and high-level orchestration. These skills exploit imperfect system-instruction generalization and inherent tensions between helpfulness and safety. Evaluated on \textbf{41} black-box commercial models across multiple providers, \textsc{JustAsk} consistently achieves full or near-complete system prompt recovery, revealing recurring design- and architecture-level vulnerabilities. Our results expose system prompts as a critical yet largely unprotected attack surface in modern agent systems.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Autonomous code agents built on large language models are reshaping software and AI development through tool use, long-horizon reasoning, and self-directed interaction.</div>
-</details>
-</div>
-<div class="card">
-<div class="title">How Reliable Is Your Jailbreak Judge? Calibration and Adversarial Robustness of Automated ASR Scoring</div>
-<div class="meta-line">Authors: Yang Gao</div>
-<div class="meta-line">First: 2026-06-24T07:14:17+00:00 · Latest: 2026-06-25T02:04:55+00:00</div>
-<div class="meta-line">Comments: 10 pages, 3 figures, 2 tables, Code: github.com/gy15901580825/judgeflip</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2606.25487v2">Abs</a> · <a href="https://arxiv.org/pdf/2606.25487v2">PDF</a> · <a href="http://github.com/gy15901580825/judgeflip">Code1</a> · <a href="https://huggingface.co/huggingface">Code2</a> · <a href="https://huggingface.co/docs/hub/spaces">Code3</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Almost every paper on LLM jailbreaks and prompt injection reports an attack-success rate (ASR), and that number is assigned not by people but by an automated judge: either a safety classifier trained for the task, or a general chat model prompted to grade. The judge is rarely checked. We check it. Using 596 human-labeled completions from the HarmBench classifier validation set, we compare the two judge families against human majority votes and then attack them. The two families fail in opposite ways. The dedicated classifier over-flags (precision 0.835, recall 0.974); three different LLM-as-judges keep high precision (0.81 to 0.94) but show erratic recall (0.06 to 0.65), so the same responses produce very different ASR depending on which judge scores them. The two families also differ sharply in robustness. Wrappers that leave the harmful text untouched and only add benign framing flip every LLM-judge between 57% and 100% of the time, and a single prepended refusal sentence accounts for much of this (39% to 88%). The dedicated classifier resists these surface attacks (at most 6.7%), but a white-box GCG attack on its open weights flips 70% of confident true positives (21 of 30; 95% CI 54 to 86%) even at a small optimization budget. A two-annotator audit confirms the attacks leave the harm intact: every one of 80 sampled flips still contained the harmful content. Because a large and growing share of reported ASR comes from LLM-judges, many such numbers are unreliable both on average and under deliberate pressure. We recommend that papers report judge precision and recall on a human-labeled slice, report ASR corrected for judge precision, and include an adversarial check of the judge. Our code is released.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Almost every paper on LLM jailbreaks and prompt injection reports an attack-success rate (ASR), and that number is assigned not by people but by an automated judge: either a safety classifier trained for the task, or a general chat model prompted to grade.</div>
-</details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20261020_0649.html">20261020_0649</a>
+      <div class="history-list"><a href="archive/20261021_0608.html">20261021_0608</a>
+<a href="archive/20261020_0649.html">20261020_0649</a>
 <a href="archive/20261019_0516.html">20261019_0516</a>
 <a href="archive/20261018_0514.html">20261018_0514</a>
 <a href="archive/20261017_0624.html">20261017_0624</a>
