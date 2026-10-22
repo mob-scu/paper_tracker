@@ -74,12 +74,35 @@ summary{cursor:pointer;color:var(--acc)}
   <button class="btn" onclick="__expandAll(false)">Collapse All</button>
 </div>
 
-        <span class="badge">2026-10-22 06:05</span>
+        <span class="badge">2026-10-23 06:05</span>
       </div>
     </div>
     <div class="hr"></div>
     <div>Latest digest</div>
     <div class="row"><div class="card">
+<div class="title">Quality-Diversity Red-Teaming: Automated Generation of High-Quality and Diverse Attackers for Large Language Models</div>
+<div class="meta-line">Authors: Ren-Jian Wang, Ke Xue, Zeyu Qin, Ziniu Li, Sheng Tang, Hao-Tian Li, Shengcai Liu, Zhi Yu, Yuanpeng Tan, Chao Qian</div>
+<div class="meta-line">First: 2025-06-08T13:07:41+00:00 · Latest: 2026-10-21T07:48:18+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2506.07121v3">Abs</a> · <a href="https://arxiv.org/pdf/2506.07121v3">PDF</a> · <a href="https://github.com/lamda-bbo/QDRT">Code1</a> · <a href="https://huggingface.co/huggingface">Code2</a> · <a href="https://huggingface.co/docs/hub/spaces">Code3</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Ensuring the safety and robustness of large language models (LLMs) is a fundamental challenge and a critical prerequisite for the responsible deployment of artificial intelligence. Red-teaming, a systematic framework to identify adversarial prompts that elicit harmful responses from target LLMs, has emerged as a crucial safety evaluation paradigm. Within this framework, the diversity of adversarial prompts is critical for a comprehensive safety assessment. However, previous red-teaming approaches often pursue diversity through simplistic metrics such as word frequency or sentence embedding similarity, which may not capture meaningful variation in attack strategies. In addition, the common practice of training a single attacker model restricts coverage across all potential attack styles and risk categories. This paper introduces Quality-Diversity Red-Teaming (QDRT), a new framework designed to address these limitations. QDRT achieves goal-driven diversity through behavior-conditioned training and implements a behavioral replay buffer in an open-ended manner. In addition, it trains multiple specialized attackers capable of generating high-quality attacks across diverse styles and risk categories. Our empirical evaluation demonstrates that QDRT generates attacks that are both more diverse and more effective against a wide range of target LLMs, including open-source models \texttt{GPT-2}, \texttt{Llama-3}, \texttt{Gemma-2}, \texttt{Qwen2.5}, and commercial models \texttt{GPT-4.1} and \texttt{GPT-5-Chat}. This work advances the field of LLM safety by providing a systematic and effective approach to automated red-teaming, ultimately supporting the responsible deployment of LLMs. Our code is available at https://github.com/lamda-bbo/QDRT.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Ensuring the safety and robustness of large language models (LLMs) is a fundamental challenge and a critical prerequisite for the responsible deployment of artificial intelligence.</div>
+</details>
+</div>
+<div class="card">
+<div class="title">Beyond Binary Labels: Diagnostic Evaluation of LLM Safety with Prompt-Level Rubrics</div>
+<div class="meta-line">Authors: Hongyu Li, Xinlong Huang, Zhan Yu, Jing Zhao, Zhe Zhao, Juntao Zhong, Xiong Kuang, Rui Yuan, ZhenXiang Yan, Huilin Xu, Haitao Yu, Lilin Wang, Rui Chen, Blaze Chen, Fengzong Lian, Renfen Hu</div>
+<div class="meta-line">First: 2026-10-21T05:33:50+00:00 · Latest: 2026-10-21T05:33:50+00:00</div>
+<div class="meta-line">Comments: 42 pages, 9 figures, 24 tables. Dataset will be publicly released at https://github.com/Tencent-Hunyuan/DiagSafe</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2610.29225v1">Abs</a> · <a href="https://arxiv.org/pdf/2610.29225v1">PDF</a> · <a href="https://github.com/Tencent-Hunyuan/DiagSafe">Code1</a> · <a href="https://huggingface.co/huggingface">Code2</a> · <a href="https://huggingface.co/docs/hub/spaces">Code3</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Current LLM safety benchmarks predominantly rely on binary safe or unsafe labels, lacking explanatory depth and suffering from low consistency across automated judges. To address this, we introduce DiagSafe, a diagnostic evaluation framework that moves beyond binary classification by employing prompt-level rubrics. Grounded in globally applicable AI safety policies, each rubric provides explicit criteria along two dimensions: safety, which targets concrete harms with specific exemptions to suppress false positives, and usefulness, which independently evaluates instruction fulfillment. To ensure a robust and realistic evaluation, we construct a bilingual (English-Chinese) benchmark grounded in a comprehensive 84-label safety taxonomy, consisting of two subsets: DiagBase, which covers single- and multi-turn prompts with direct harmful queries and template-based jailbreaks, and DiagAttack, which embeds harmful intents into complex instruction-following tasks to form challenging instruction attacks. Extensive experiments demonstrate that DiagSafe significantly enhances the reliability of LLM-as-a-judge evaluation, achieving 95.34% agreement with human annotations -- substantially higher than the 69%-87% achieved by the baselines -- and high inter-judge consistency (Cohen&#x27;s $κ$ = 0.864). Furthermore, applying our framework reveals that leading LLMs differ markedly in their unsafe rates, and each model also exhibits unique vulnerabilities along different dimensions. In addition, we observe that models are particularly susceptible in Chinese and multi-turn contexts. Ultimately, DiagSafe provides a reliable and explainable tool for auditing and optimizing LLM alignment.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Current LLM safety benchmarks predominantly rely on binary safe or unsafe labels, lacking explanatory depth and suffering from low consistency across automated judges.</div>
+</details>
+</div>
+<div class="card">
 <div class="title">Polarity Blindness in LLM Safety: A Systematic Study of Negation, Antonym Substitution, and Adversarial Framing</div>
 <div class="meta-line">Authors: Diego Miguel Lozano, Erik Derner, Juan Antonio Pérez-Ortiz, Nuria Oliver</div>
 <div class="meta-line">First: 2026-10-20T09:22:50+00:00 · Latest: 2026-10-20T09:22:50+00:00</div>
@@ -723,7 +746,7 @@ summary{cursor:pointer;color:var(--acc)}
 <div class="meta-line">Venue: EMNLP 2026</div>
 <div class="meta-line">First: 2026-08-25T01:36:54+00:00 · Latest: 2026-08-25T01:36:54+00:00</div>
 <div class="meta-line">Comments: To appear in EMNLP 2026 (Findings)</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2608.23959v1">Abs</a> · <a href="https://arxiv.org/pdf/2608.23959v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2608.23959v1">Abs</a> · <a href="https://arxiv.org/pdf/2608.23959v1">PDF</a></div>
 <details class="detail"><summary>Abstract</summary>
 <div class="mono">Safety alignment in large language models (LLMs) remains brittle against a growing spectrum of attacks. Jailbreak attacks bypass safety mechanisms through crafted prompts, while neuron-level attacks directly prune safety-critical neurons post-deployment. Both exploit a common weakness: safety-relevant information concentrates in a sparse neuron subset. We present NeuronGuard, a fine-tuning-stage defense that simultaneously hardens LLMs against both attack classes by redistributing safety signals across a broader set of neurons. NeuronGuard dynamically identifies safety-critical neurons via periodically refreshed per-layer linear classifiers, forces refusal behavior under deliberate neuron ablation, and applies KL-divergence regularization for distributional consistency. A randomized gradient projection strategy preserves downstream task utility by resolving conflicts between the defense and task objectives. We provide a formal guarantee that NeuronGuard strictly reduces the attack success rate (ASR) upper bound, and experiments across three LLMs, six state-of-the-art attack strategies, and multimodal settings confirm near-zero ASR while maintaining task accuracy, including against white-box adaptive adversaries.</div></details>
 <details class="detail"><summary>Summary / 总结</summary>
@@ -932,17 +955,6 @@ summary{cursor:pointer;color:var(--acc)}
 <div class="mono">Large language models (LLMs) are increasingly used across diverse tasks in K-12 education, yet existing safety evaluations rarely examine how harmful or inappropriate content appears in interactions between LLMs and students or teachers. To address this, we present EduZone, an evaluation framework for LLM safety across diverse educational scenarios. Our framework systematically combines (1) student- and teacher-facing LLM usage contexts, (2) fine-grained curriculum concepts, and (3) 6 risk categories and 28 subcategories spanning both conventional and education-specific harms to generate contextually grounded adversarial interactions. We construct these interactions in three settings: single-turn requests, static multi-turn conversations, and dynamic multi-turn conversations. Using these interactions, we evaluate ten LLMs using four safety levels: refusal, safe assistance, risky assistance with safety guidance, and fully risky assistance. Our results reveal greater vulnerability to education-specific risks and dynamic multi-turn interactions, while existing safety guardrails fail to adequately address these risks. EduZone advances LLM safety in education by providing an automated, scalable evaluation framework that supports the development and deployment of safer LLMs in K-12 education.</div></details>
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">Large language models (LLMs) are increasingly used across diverse tasks in K-12 education, yet existing safety evaluations rarely examine how harmful or inappropriate content appears in interactions between LLMs and students or teachers.</div>
-</details>
-</div>
-<div class="card">
-<div class="title">Quality-Diversity Red-Teaming: Automated Generation of High-Quality and Diverse Attackers for Large Language Models</div>
-<div class="meta-line">Authors: Ren-Jian Wang, Ke Xue, Zeyu Qin, Ziniu Li, Sheng Tang, Hao-Tian Li, Shengcai Liu, Zhi Yu, Yuanpeng Tan, Chao Qian</div>
-<div class="meta-line">First: 2025-06-08T13:07:41+00:00 · Latest: 2026-08-01T10:21:24+00:00</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2506.07121v2">Abs</a> · <a href="https://arxiv.org/pdf/2506.07121v2">PDF</a> · <a href="https://github.com/lamda-bbo/QDRT">Code1</a> · <a href="https://huggingface.co/huggingface">Code2</a> · <a href="https://huggingface.co/docs/hub/spaces">Code3</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Ensuring the safety and robustness of large language models (LLMs) is a fundamental challenge and a critical prerequisite for the responsible deployment of artificial intelligence. Red-teaming, a systematic framework to identify adversarial prompts that elicit harmful responses from target LLMs, has emerged as a crucial safety evaluation paradigm. Within this framework, the diversity of adversarial prompts is critical for a comprehensive safety assessment. However, previous red-teaming approaches often pursue diversity through simplistic metrics such as word frequency or sentence embedding similarity, which may not capture meaningful variation in attack strategies. In addition, the common practice of training a single attacker model restricts coverage across all potential attack styles and risk categories. This paper introduces Quality-Diversity Red-Teaming (QDRT), a new framework designed to address these limitations. QDRT achieves goal-driven diversity through behavior-conditioned training and implements a behavioral replay buffer in an open-ended manner. In addition, it trains multiple specialized attackers capable of generating high-quality attacks across diverse styles and risk categories. Our empirical evaluation demonstrates that QDRT generates attacks that are both more diverse and more effective against a wide range of target LLMs, including open-source models \texttt{GPT-2}, \texttt{Llama-3}, \texttt{Gemma-2}, \texttt{Qwen2.5}, and commercial models \texttt{GPT-4.1} and \texttt{GPT-5-Chat}. This work advances the field of LLM safety by providing a systematic and effective approach to automated red-teaming, ultimately supporting the responsible deployment of LLMs. Our code is available at https://github.com/lamda-bbo/QDRT.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Ensuring the safety and robustness of large language models (LLMs) is a fundamental challenge and a critical prerequisite for the responsible deployment of artificial intelligence.</div>
 </details>
 </div>
 <div class="card">
@@ -1242,22 +1254,10 @@ summary{cursor:pointer;color:var(--acc)}
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">Rare events govern the safety profile of modern AI systems, yet their probabilities are extremely difficult to estimate: direct Monte Carlo requires prohibitive sample budgets.</div>
 </details>
-</div>
-<div class="card">
-<div class="title">Sparse Autoencoders are Capable LLM Jailbreak Mitigators</div>
-<div class="meta-line">Authors: Yannick Assogba, Jacopo Cortellazzi, Javier Abad, Pau Rodriguez, Xavier Suau, Arno Blaas</div>
-<div class="meta-line">Venue: ICML 2026</div>
-<div class="meta-line">First: 2026-02-12T21:17:32+00:00 · Latest: 2026-06-27T01:07:47+00:00</div>
-<div class="meta-line">Comments: Accepted at the Mechanistic Interpretability Workshop, ICML 2026. 31 pages, 20 figures, 7 tables</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2602.12418v2">Abs</a> · <a href="https://arxiv.org/pdf/2602.12418v2">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Jailbreak attacks remain a persistent threat to large language model safety. We propose Context-Conditioned Delta Steering (CC-Delta), an SAE-based defense that identifies jailbreak-relevant sparse features by comparing token-level representations of the same harmful request with and without jailbreak context. Using paired harmful/jailbreak prompts, CC-Delta selects features via statistical testing and applies inference-time mean-shift steering in SAE latent space. Across four aligned instruction-tuned models and twelve jailbreak attacks, CC-Delta achieves comparable or better safety-utility tradeoffs than baseline defenses operating in dense latent space. In particular, our method clearly outperforms dense mean-shift steering on all four models, and particularly against out-of-distribution attacks, showing that steering in sparse SAE feature space offers advantages over steering in dense activation space for jailbreak mitigation. Our results suggest off-the-shelf SAEs trained for interpretability can be repurposed as practical jailbreak defenses without task-specific training.</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Jailbreak attacks remain a persistent threat to large language model safety.</div>
-</details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20261021_0608.html">20261021_0608</a>
+      <div class="history-list"><a href="archive/20261022_0605.html">20261022_0605</a>
+<a href="archive/20261021_0608.html">20261021_0608</a>
 <a href="archive/20261020_0649.html">20261020_0649</a>
 <a href="archive/20261019_0516.html">20261019_0516</a>
 <a href="archive/20261018_0514.html">20261018_0514</a>
