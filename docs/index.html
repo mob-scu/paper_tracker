@@ -74,12 +74,23 @@ summary{cursor:pointer;color:var(--acc)}
   <button class="btn" onclick="__expandAll(false)">Collapse All</button>
 </div>
 
-        <span class="badge">2026-10-23 06:05</span>
+        <span class="badge">2026-10-24 05:50</span>
       </div>
     </div>
     <div class="hr"></div>
     <div>Latest digest</div>
     <div class="row"><div class="card">
+<div class="title">The Price of Safety: Benign-Case Utility and Token Overhead of Memory-Poisoning Defenses in LLM Agents</div>
+<div class="meta-line">Authors: Pritom Bhowmik</div>
+<div class="meta-line">First: 2026-09-19T06:39:21+00:00 · Latest: 2026-10-22T08:33:17+00:00</div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2609.22818v2">Abs</a> · <a href="https://arxiv.org/pdf/2609.22818v2">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
+<details class="detail"><summary>Abstract</summary>
+<div class="mono">Memory-poisoning defenses for LLM agents are typically evaluated by how well they stop attacks, even though almost all traffic they encounter is benign. We measure their cost when no attack is present. Our harness holds the memory backend, retrieval, answer prompt, and judge constant, changing only the defense. We test four defenses on half of LoCoMo: five long conversations with 750 turns and 255 questions per run, repeated three times each. Replication proved necessary: one run showed a reranker cost on adversarial questions that the other two did not. The three write-time defenses (sanitization, provenance checking, and LLM-based anomaly detection) never fired on benign traffic. We detect no accuracy cost from them at a resolution of about $\pm$4 points; anomaly detection adds 1.2% token overhead. The read-time reranker, with 2.7% token overhead, fired on 9.9% of its memory decisions and withheld memory from 45% of questions. It lowered core accuracy by 4.4 points (95% CI [-9.0, -0.05]; McNemar p = 0.064). The effect is borderline in magnitude, but its direction held across all six runs that used the reranker. A blind audit found content-based justification for only 2 of 50 sampled drops. Stacking all four defenses raised token overhead to 4.1% but did not compound the accuracy cost. In our runs, cost tracked what each defense judged and how much context it used, rather than whether it used an LLM. Attack success rate reveals none of this, so benign cost should be reported alongside it. We release the harness, labels, and per-run outputs.</div></details>
+<details class="detail"><summary>Summary / 总结</summary>
+<div class="mono">Memory-poisoning defenses for LLM agents are typically evaluated by how well they stop attacks, even though almost all traffic they encounter is benign.</div>
+</details>
+</div>
+<div class="card">
 <div class="title">Quality-Diversity Red-Teaming: Automated Generation of High-Quality and Diverse Attackers for Large Language Models</div>
 <div class="meta-line">Authors: Ren-Jian Wang, Ke Xue, Zeyu Qin, Ziniu Li, Sheng Tang, Hao-Tian Li, Shengcai Liu, Zhi Yu, Yuanpeng Tan, Chao Qian</div>
 <div class="meta-line">First: 2025-06-08T13:07:41+00:00 · Latest: 2026-10-21T07:48:18+00:00</div>
@@ -746,7 +757,7 @@ summary{cursor:pointer;color:var(--acc)}
 <div class="meta-line">Venue: EMNLP 2026</div>
 <div class="meta-line">First: 2026-08-25T01:36:54+00:00 · Latest: 2026-08-25T01:36:54+00:00</div>
 <div class="meta-line">Comments: To appear in EMNLP 2026 (Findings)</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2608.23959v1">Abs</a> · <a href="https://arxiv.org/pdf/2608.23959v1">PDF</a></div>
+<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2608.23959v1">Abs</a> · <a href="https://arxiv.org/pdf/2608.23959v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
 <details class="detail"><summary>Abstract</summary>
 <div class="mono">Safety alignment in large language models (LLMs) remains brittle against a growing spectrum of attacks. Jailbreak attacks bypass safety mechanisms through crafted prompts, while neuron-level attacks directly prune safety-critical neurons post-deployment. Both exploit a common weakness: safety-relevant information concentrates in a sparse neuron subset. We present NeuronGuard, a fine-tuning-stage defense that simultaneously hardens LLMs against both attack classes by redistributing safety signals across a broader set of neurons. NeuronGuard dynamically identifies safety-critical neurons via periodically refreshed per-layer linear classifiers, forces refusal behavior under deliberate neuron ablation, and applies KL-divergence regularization for distributional consistency. A randomized gradient projection strategy preserves downstream task utility by resolving conflicts between the defense and task objectives. We provide a formal guarantee that NeuronGuard strictly reduces the attack success rate (ASR) upper bound, and experiments across three LLMs, six state-of-the-art attack strategies, and multimodal settings confirm near-zero ASR while maintaining task accuracy, including against white-box adaptive adversaries.</div></details>
 <details class="detail"><summary>Summary / 总结</summary>
@@ -1242,21 +1253,10 @@ summary{cursor:pointer;color:var(--acc)}
 <details class="detail"><summary>Summary / 总结</summary>
 <div class="mono">Aligning large language models (LLMs) with human values is essential for their safe deployment and widespread adoption.</div>
 </details>
-</div>
-<div class="card">
-<div class="title">SCARCE: Scalable Cascade Analysis for Rare-event Characterisation via Embeddings</div>
-<div class="meta-line">Authors: Yingjie Wang, Yi Dong, Edmund Lau, Jie Meng, Taylor T Johnson, Xiaowei Huang</div>
-<div class="meta-line">First: 2026-06-28T21:59:31+00:00 · Latest: 2026-06-28T21:59:31+00:00</div>
-<div class="meta-line">Comments: 23 pages, 11 figures, 5 tables</div>
-<div class="links" style="margin-top:8px"><a href="https://arxiv.org/abs/2606.29623v1">Abs</a> · <a href="https://arxiv.org/pdf/2606.29623v1">PDF</a> · <a href="https://huggingface.co/huggingface">Code1</a> · <a href="https://huggingface.co/docs/hub/spaces">Code2</a></div>
-<details class="detail"><summary>Abstract</summary>
-<div class="mono">Rare events govern the safety profile of modern AI systems, yet their probabilities are extremely difficult to estimate: direct Monte Carlo requires prohibitive sample budgets. Subset Simulation (SS) addresses this by decomposing a rare-event probability into moderate conditional probabilities over nested intermediate events. However, classical SS requires a handcrafted scalar performance function whose sublevel sets define those events, demanding detailed knowledge of the failure geometry and limiting transfer to new domains. We propose SCARCE (Scalable Cascade Analysis for Rare-event Characterisation via Embeddings), which replaces the performance function with learned latent representations and geometric rulers that score proximity to failure regions. Adaptive thresholding constructs nested intermediate events directly from data. We formalise SCARCE through a non-negative supermartingale, yielding a high-probability upper envelope that remains valid under early stopping. On MNIST misclassification, where dense Monte Carlo provides ground truth, SCARCE achieves approximately 400--500 times lower mean absolute error than grid-searched traditional SS while eliminating systematic over-counting. We then study PAIR-style LLM jailbreaks under a fleet-level threat model with adversarial fraction $η$. On Llama-Guard-3-8B hidden states, a PCA-based ruler attains 2.6% mean relative error for $η\geq 10^{-3}$ against finite-sample references whose average bootstrap relative half-width is 27.9%, and transfers to a GCG-style corpus with 2.93% relative error after recalibration. A directional criterion $\mathrm{KL}(p_{\mathrm{good}}\,\|\,p_{\mathrm{bad}})$ ranks rulers consistently with estimation error (Spearman $ρ=0.83$).</div></details>
-<details class="detail"><summary>Summary / 总结</summary>
-<div class="mono">Rare events govern the safety profile of modern AI systems, yet their probabilities are extremely difficult to estimate: direct Monte Carlo requires prohibitive sample budgets.</div>
-</details>
 </div></div>
     <details style="margin-top:16px" class="detail"><summary>History</summary>
-      <div class="history-list"><a href="archive/20261022_0605.html">20261022_0605</a>
+      <div class="history-list"><a href="archive/20261023_0605.html">20261023_0605</a>
+<a href="archive/20261022_0605.html">20261022_0605</a>
 <a href="archive/20261021_0608.html">20261021_0608</a>
 <a href="archive/20261020_0649.html">20261020_0649</a>
 <a href="archive/20261019_0516.html">20261019_0516</a>
